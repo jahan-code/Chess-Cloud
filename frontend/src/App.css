@@ -1,0 +1,137 @@
+
+@font-face {
+  font-family: 'Florence';
+  src: url('./assets/fonts/Florence.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: Florence;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.rounded-input {
+  padding: 12px 20px; /* Add padding for better spacing */
+  font-size: 16px;    /* Adjust the font size */
+  border: 2px solid #ddd; /* Border with light color */
+  border-radius: 30px; /* Fully rounded corners */
+  outline: none;       /* Remove default outline */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+  width: 100%;         /* Full-width input */
+  max-width: 400px;    /* Limit the maximum width */
+}
+
+.rounded-input:focus {
+  border-color: #1eff00; /* Change border color on focus */
+  box-shadow: 0 0 8px rgba(9, 255, 0, 0.5); /* Add a glowing effect */
+}
+
+.rounded-input::placeholder {
+  color: #aaa; /* Lighter color for placeholder text */
+  font-style: italic; /* Optional italicized placeholder */
+}
+.input-container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto; /* Center the container */
+}
+
+.rounded-input {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 30px 0 0 30px; /* Round only the left side */
+  outline: none;
+  flex-grow: 1; /* Allow input to take available space */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rounded-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: rgb(49, 214, 7);
+  color: white;
+  border: 2px solid rgb(129, 211, 7);
+  border-radius: 0 30px 30px 0; /* Round only the right side */
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #429b07;
+  border-color: #429b07;
+}
+
+button:focus {
+  outline: none;
+}
+.idbutton{
+border-radius: 10px;
+
+}
+.copybutton{
+  border-radius: 10px;
+  ;
+}
+.buttonbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 18px;
+}
+.blackorWhite{
+  width: 20px;
+}
+h1{
+  font-size: 48px;
+  margin-top: 0;
+}
+p{
+  font-family: sans-serif;
+}
+.logo{
+  width: 66px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
