@@ -17,10 +17,6 @@ package-lock.json
 coverage/
 *.tgz
 
-# Ignore backend build folder if you have one (e.g., dist or build)
-build/
-dist/
-
 # Ignore other specific files/folders for your project as needed
 *.bak
 *.swp
