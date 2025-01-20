@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import './App.css';
 
-const socket = io(`https://cloud-chess.zeabur.app`);
+const socket = io(`https://chess-cloud.zeabur.app/`);
 
 function App() {
     const [roomID, setRoomID] = useState("");
