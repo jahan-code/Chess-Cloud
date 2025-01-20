@@ -13,15 +13,21 @@ const PORT = process.env.PORT || 3001;
 const FRONTEND_URL = process.env.FRONTEND_URL 
 
 // Enable CORS
-app.use(cors({ origin: FRONTEND_URL }));
+app.use(cors({
+    origin: "https://chess-cloud-dvpafst4a-jahan-codes-projects.vercel.app",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"],
+    credentials: true
+}));
+
 const io = new Server(server, {
     cors: {
-        origin: "*",
+        origin: "https://chess-cloud-dvpafst4a-jahan-codes-projects.vercel.app",
         methods: ["GET", "POST"],
+        credentials: true
     },
-    transports: ["websocket", "polling"],
+    transports: ["websocket", "polling"], // ✅ Ensure WebSockets are used
 });
-
 // In-memory storage for rooms
 const rooms = {};
 
