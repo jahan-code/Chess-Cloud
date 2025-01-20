@@ -137,7 +137,7 @@ function App() {
     return (
         <div style={{ textAlign: "center", marginTop: "20px" }}>
             <ToastContainer position="bottom-right" autoClose={3000} />
-            <img className="logo" src="/images/White-piece2.png"/>
+            <img className="logo" src="/images/White-piece.png"/>
             <h1>Chess Cloud</h1>
             <div className="input-container">
                 <input
@@ -164,7 +164,7 @@ function App() {
                 <h3>Players</h3>
                 
                     {players.map((player) => (
-                            player.color === "w" ? (<img className="blackorWhite" src="/images/white-piece.png" alt="White Player" />
+                            player.color === "w" ? (<img className="blackorWhite" src="/images/White-piece2.png" alt="White Player" />
             ) : (
                 <img className="blackorWhite" src="/images/black-piece.png" alt="Black Player" />
             )
