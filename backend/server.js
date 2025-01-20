@@ -153,4 +153,4 @@ io.on("connection", (socket) => {
     });
 });
 
-server.listen(5000, () => console.log(`Server running on https://cloud-chess.zeabur.app`);
+server.listen(5000, () => console.log(`Server running on https://cloud-chess.zeabur.app`))
