@@ -152,5 +152,8 @@ io.on("connection", (socket) => {
         }
     });
 });
+app.get("/", (req, res) => {
+    res.send("Backend is working!");
+});
 
 server.listen(PORT, () => console.log(`Server running on https://cloud-chess.zeabur.app`));
