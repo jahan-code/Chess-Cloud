@@ -9,7 +9,7 @@ const Chess = require("chess.js").Chess;
 const app = express();
 const server = http.createServer(app);
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 3001;
 const FRONTEND_URL = process.env.FRONTEND_URL 
 
 // Enable CORS
@@ -153,4 +153,4 @@ io.on("connection", (socket) => {
     });
 });
 
-server.listen(5000, () => console.log(`Server running on https://cloud-chess.zeabur.app`))
+server.listen(PORT, () => console.log(`Server running on https://cloud-chess.zeabur.app`))
