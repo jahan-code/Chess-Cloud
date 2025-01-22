@@ -14,7 +14,7 @@ const FRONTEND_URL = process.env.FRONTEND_URL
 
 // Enable CORS
 app.use(cors({
-    origin: "https://chess-cloud-bnoy75sd4-jahan-codes-projects.vercel.app",
+    origin: "https://chess-cloud-luoewst20-jahan-codes-projects.vercel.app/",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
     credentials: true
@@ -22,7 +22,7 @@ app.use(cors({
 
 const io = new Server(server, {
     cors: {
-        origin: "https://chess-cloud-bnoy75sd4-jahan-codes-projects.vercel.app",
+        origin: "https://chess-cloud-luoewst20-jahan-codes-projects.vercel.app/",
         methods: ["GET", "POST"],
         credentials: true
     },
